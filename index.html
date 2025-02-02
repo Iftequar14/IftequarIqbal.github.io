@@ -3,126 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iftequar Iqbal Mohammed - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        header {
-            background-color: #3498db;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-        }
-        h1 {
-            font-size: 36px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h2 {
-            font-size: 24px;
-        }
-        .contact-info {
-            margin-bottom: 20px;
-        }
-        .professional-summary {
-            margin-top: 20px;
-        }
-        .skills {
-            margin-top: 20px;
-        }
-        .education {
-            margin-top: 20px;
-        }
-        .experience {
-            margin-top: 20px;
-        }
-    </style>
+    <title>Iftequar Mohammed - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Iftequar Iqbal Mohammed</h1>
-        <p>Computer Science Student</p>
-        <p>Email: iftequar14@gmail.com | Phone: 773-765-8191</p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Iftequar Mohammed</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero bg-primary text-white py-5">
+        <div class="container text-center">
+            <h1>Iftequar Iqbal Mohammed</h1>
+            <p class="lead">Computer Science Graduate Student</p>
+            <div class="contact-info">
+                <p>📧 iftequar14@gmail.com | 📱 773-765-8191</p>
+            </div>
+        </div>
     </header>
-    <div class="container">
-        <section class="professional-summary">
-            <h2>Professional Summary:</h2>
-            <p>
-               Experienced computer science student from Purdue University Northwest with a focus on developing intuitive software applications. Possesses strong problem-solving abilities and thrives in collaborative team environments. With over 5 years of hands-on experience in designing, developing, implementing, and testing client/server e-business applications, adept at navigating the entire software development lifecycle. Skilled in creating system use cases, drafting comprehensive technical and functional specifications based on business needs, and effectively collaborating with stakeholders to ensure alignment with project objectives. Proficient in object-oriented analysis and design using UML, with a keen eye for detail and a commitment to delivering high-quality solutions. 
-            </p>
+
+    <main class="container my-5">
+        <section id="skills" class="mb-5">
+            <h2 class="mb-4">Technical Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Languages</h4>
+                    <ul class="list-unstyled">
+                        <li>Python</li>
+                        <li>Java</li>
+                        <li>C#/.NET</li>
+                        <li>JavaScript/TypeScript</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Frameworks</h4>
+                    <ul class="list-unstyled">
+                        <li>ASP.NET Core</li>
+                        <li>React</li>
+                        <li>Angular</li>
+                        <li>Spring</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h4>Cloud & DevOps</h4>
+                    <ul class="list-unstyled">
+                        <li>Azure</li>
+                        <li>AWS</li>
+                        <li>Docker</li>
+                        <li>Kubernetes</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <section class="skills">
-            <h2>Skill Set:</h2>
-            <p><strong>Programming Languages:</strong> Python, Java, C#, .NET, ASP.NET Core, JavaScript, TypeScript, React, XML/XSLT, JSON, HTML, CSS, SQL, PowerShell, OOP, OOD</p>
-            <p><strong>Databases:</strong> SQL Server, Oracle, NoSQL, MySQL, MongoDB, Azure Cosmos DB.</p>
-            <p><strong>Frameworks:</strong> Spring, GraphQL, REST, Angular</p>
-            <p><strong>SDLC Tools:</strong> Agile methodologies, DevOps</p>
-            <p><strong>Cloud Providers:</strong> Microsoft Azure, Amazon AWS. </p>
-            <p><strong>DevOps:</strong> CI/CD using Jenkins, Octopus Deploy, Docker, Azure Kubernetes, ELK, Splunk. </p>
+
+        <section id="experience" class="mb-5">
+            <h2 class="mb-4">Professional Experience</h2>
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5>ResMed Inc - Software Engineer Intern</h5>
+                    <p class="text-muted">06/2024 - 08/2024</p>
+                    <ul>
+                        <li>Optimized backend solutions using .NET</li>
+                        <li>Developed Angular front-end applications</li>
+                        <li>Implemented Azure DevOps pipelines</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5>Purdue University Northwest - Research Assistant</h5>
+                    <p class="text-muted">04/2023 - 05/2023</p>
+                    <ul>
+                        <li>Developed VR application in Unity for underwater simulations</li>
+                        <li>Created data visualization tool with Dash framework</li>
+                        <li>Implemented machine learning model interfaces</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5>Visual Computer System - Technical Lead</h5>
+                    <p class="text-muted">03/2022 - 12/2022</p>
+                    <ul>
+                        <li>Led 4-person team in full-stack development</li>
+                        <li>Improved code coverage from 40% to 90%</li>
+                        <li>Managed technical support for 50+ clients</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5>Infosource - Technical Consultant Lead</h5>
+                    <p class="text-muted">04/2019 - 02/2022</p>
+                    <ul>
+                        <li>Developed RESTful APIs for enterprise systems</li>
+                        <li>Created .NET web service clients</li>
+                        <li>Increased client satisfaction by 15%</li>
+                    </ul>
+                </div>
+            </div>
         </section>
-        <section class="education">
-            <h2>Education:</h2>
-            <p>
-                - Pursuing Master’s in computer science from Purdue University Northwest (GPA: 4) - January 2023 - Hammond, IN
-            </p>
-            <p>
-                - Bachelor’s in Information Technology from Osmania University - August 2014 - July 2018 - Hyderabad, India
-            </p>
+
+        <section id="education" class="mb-5">
+            <h2 class="mb-4">Education</h2>
+            <div class="card">
+                <div class="card-body">
+                    <h5>Purdue University Northwest</h5>
+                    <p>MS Computer Science (GPA: 4.0)</p>
+                    <p>2023 - Present</p>
+                </div>
+            </div>
         </section>
-        <section class="experience">
-            <h2>Professional Experience:</h2>
-            <p>
-                <strong>ResMed Inc</strong><br>
-                06/2024 - 08/2024<br>
-                Role: Software Engineer Intern<br>
-                Responsibilities:
-                <ul>
-                    <li>Developed and optimized backend solutions using .NET and built dynamic front-end applications with Angular, contributing to a 25% increase in application responsiveness.</li>
-                    <li>Streamlined development and deployment processes through Azure DevOps, resulting in a 30% reduction in project delivery times</li>
-                    <li>Collaborated on multiple full-stack projects, enhancing technical proficiency and gaining insights into agile development methodologies.</li>
-                </ul>
-                Environment: C#, .Net Framework, Angular, Azure.
-            </p>
-            <p>
-                <strong>Purdue University Northwest</strong><br>
-                04/2023 - 05/2023<br>
-                Role: Research Assistance<br>
-                Responsibilities:
-                <ul>
-                    <li>Designed and implemented a virtual reality application in Unity to simulate underwater processes, enhancing user engagement and interactivity</li>
-                    <li>Developed a data visualization tool for machine learning models using Dash, improving data accessibility and interpretability for research purposes.</li>
-                </ul>
-                Environment: Unity, C#, Python, Dash.
-            </p>
-            <p>
-                <strong>Visual Computer System</strong><br>
-                03/2022 - 12/2022<br>
-                Role: Technical Lead<br>
-                Responsibilities:
-                <ul>
-                    <li>Led a four-person team in developing applications using C#, .NET, and SQL, achieving a code coverage increase from 40% to 90%, which significantly enhanced code quality.</li>
-                    <li>Managed technical support for over 50 clients in a fast-paced environment, improving customer satisfaction ratings and increasing retention rates among enterprise clients by 70%.</li>
-                    <li>Delivered high-quality code ahead of schedule, consistently exceeding client expectations and project milestones</li>
-                </ul>
-                Environment: C#, .Net, HTML5, CSS3, Sql Server, AWS, Azure.
-            </p>
-            <p>
-                <strong>Infosource</strong><br>
-                04/2019 - 02/2022<br>
-                Roles: Technical Consultant - Technical Lead<br>
-                Responsibilities:
-                <ul>
-                    <li>Developed RESTful APIs for efficient data retrieval and business logic implementation, enhancing system performance and user experience</li>
-                    <li>Created a web service client using the .NET Framework and REST HTTP protocol, facilitating seamless integration with existing systems.</li>
-                    <li>Successfully delivered multiple software products to clients, contributing to a 15% increase in client satisfaction ratings.</li>
-                </ul>
-                Environment: C#, .Net, HTML5, CSS3, Sql Server, Azure.
-            </p>
+
+        <section id="contact" class="mb-5">
+            <h2 class="mb-4">Contact</h2>
+            <form>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your email">
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
         </section>
-    </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
